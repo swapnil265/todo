@@ -9,7 +9,7 @@ import { ListToDosComponent } from './list-to-dos/list-to-dos.component';
 const routes: Routes = [
   {path:'login' , component: LoginComponent},
   {path:'welcome/:name',component:WelcomeComponent},
-  {path:'listToDos/:names',component:ListToDosComponent},
+  {path:'listToDos',component:ListToDosComponent},
   {path:'**',component:ErrorComponent}
 ];
 

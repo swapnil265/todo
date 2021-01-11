@@ -1,3 +1,22 @@
-<p>
-  list-to-dos works!
-</p>
+
+<h1> My Todo's</h1>
+<div class ="container"> 
+<table class = "table">
+  
+  <thead>
+    <tr>
+      <th>description </th>
+      <th>is done?</th>
+      <th>date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let todo of todo">
+      
+      <td>{{todo.description}}</td>
+      <td>{{todo.done}}</td>
+      <td>{{todo.targetDate | date | uppercase}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
