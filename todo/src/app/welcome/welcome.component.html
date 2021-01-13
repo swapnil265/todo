@@ -7,3 +7,12 @@
 
   you can manage your todo <a routerLink="/listToDos">here</a>
 </div>
+
+<div class = "container" >
+click to get a customized welcome message
+<button (click) = "getWelcomeMessageWithParameter()" class = "btn btn-success">Get Welcome Message</button>
+</div>
+
+<div class="container" *ngIf="welcomeMessageFromService">
+  <h2>your customized message {{welcomeMessageFromService}}</h2>
+</div>

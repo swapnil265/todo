@@ -7,13 +7,13 @@
         <a class="navbar-brand" href="#">To do Application</a>
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-                <a class="nav-link" routerLink="/login">Login <span class="sr-only">(current)</span></a>
+                <a *ngIf="!this.hardCodedAuthenticationService.isUserLoggedIn()" class="nav-link" routerLink="/login">Login <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/listToDos">listTodos</a>
+                <a *ngIf="this.hardCodedAuthenticationService.isUserLoggedIn()" class="nav-link" routerLink="/listToDos">listTodos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link disabled" href="#">logout</a>
+                <a *ngIf="this.hardCodedAuthenticationService.isUserLoggedIn()" class="nav-link" href="#">logout</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
