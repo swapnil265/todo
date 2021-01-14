@@ -12,6 +12,7 @@ import { MenuComponent } from './menu/menu.component';
 import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeDataService } from './service/data/welcome-data.service';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WelcomeDataService } from './service/data/welcome-data.service';
     ErrorComponent,
     ListToDosComponent,
     MenuComponent,
-    FooterComponent
+    FooterComponent,
+    TodoComponent
    
   ],
   imports: [
